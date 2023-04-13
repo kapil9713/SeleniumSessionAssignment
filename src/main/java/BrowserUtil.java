@@ -7,17 +7,18 @@ public class BrowserUtil {
 
 	  private WebDriver driver;
 	
-	public WebDriver initDriver(String browserName) {
+	public WebDriver initDriver(String browserNamee) {
 		
-		System.out.println("browserName"+browserName);
+		System.out.println("browserName"+browserNamee);
 		
-		switch (browserName) {
+		switch (browserNamee) {
 		case "chrome":
 			driver=new ChromeDriver();
 			break;
 			
 		case "firefox":
 			driver=new FirefoxDriver();
+			//driver=new FirefoxDriver();
 			break;
 			
 		case "Edge":
